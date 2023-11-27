@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/calculatorScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fondo_calc"
+        android:fontFamily="monospace"
+        android:gravity="center|end"
+        android:paddingRight="24dp"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp" />
+
+    <!-- Layout aplicado a los botones de la calc -->
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="586dp"
+        android:layout_gravity="fill"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="1"
+        android:background="@color/fondo"
+        android:columnCount="4"
+        android:rowCount="5"
+        app:elevation="25dp"
+        >
+
+        <!-- Botones de la calculadora -->
+
+        <Button
+            android:id="@+id/boton_AC"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_margin="5dp"
+            android:textColor="@color/colorBordersText"
+            android:textSize="30sp"
+            android:text="AC"
+            app:backgroundTint="@null"
+            android:background="@drawable/botones_backgroundsignos"
+            />
+
+        <Button
+            android:id="@+id/boton_mas_menos"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_margin="5dp"
+            android:textColor="@color/colorBordersText"
+            android:textSize="30sp"
+            android:text="+/-"
+            app:backgroundTint="@null"
+            android:background="@drawable/botones_backgroundsignos" />
+
+        <Button
+            android:id="@+id/boton_porcentaje"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_margin="5dp"
+            android:text="%"
+            android:textColor="@color/colorBordersText"
+            android:textSize="30sp"
+            app:backgroundTint="@null"
+            android:background="@drawable/botones_backgroundsignos" />
+
+        <Button
+            android:id="@+id/boton_dividir"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_margin="5dp"
+            android:text="÷"
+            android:textColor="@color/colorBordersText"
+            android:textSize="30sp"
+            app:backgroundTint="@null"
+            android:background="@drawable/botones_backgroundsignos"/>
+
+        <Button
+            android:id="@+id/boton_siete"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_margin="5dp"
+            android:text="7"
+            android:textColor="@color/colorBordersText"
+            android:textSize="30sp"
+            app:backgroundTint="@null"
+            android:background="@drawable/botones_backgorundnum"/>
+
+        <Button
+            android:id="@+id/boton_ocho"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_margin="5dp"
+            android:text="8"
+            android:textColor="@color/colorBordersText"
+            android:textSize="30sp"
+            app:backgroundTint="@null"
+            android:background="@drawable/botones_backgorundnum"/>
+
+        <Button
+            android:id="@+id/boton_nueve"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_margin="5dp"
+            android:text="9"
+            android:textColor="@color/colorBordersText"
+            android:textSize="30sp"
+            app:backgroundTint="@null"
+            android:background="@drawable/botones_backgorundnum"/>
+
+        <Button
+            android:id="@+id/boton_multiplicar"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_margin="5dp"
+            android:text="*"
+            android:textColor="@color/colorBordersText"
+            android:textSize="30sp"
+            app:backgroundTint="@null"
+            android:background="@drawable/botones_backgroundsignos"/>
+
+        <Button
+            android:id="@+id/boton_cuatro"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_margin="5dp"
+            android:text="4"
+            android:textColor="@color/colorBordersText"
+            android:textSize="30sp"
+            app:backgroundTint="@null"
+            android:background="@drawable/botones_backgorundnum"/>
+
+        <Button
+            android:id="@+id/boton_cinco"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_margin="5dp"
+            android:text="5"
+            android:textColor="@color/colorBordersText"
+            android:textSize="30sp"
+            app:backgroundTint="@null"
+            android:background="@drawable/botones_backgorundnum"/>
+
+        <Button
+            android:id="@+id/boton_seis"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_margin="5dp"
+            android:text="6"
+            android:textColor="@color/colorBordersText"
+            android:textSize="30sp"
+            app:backgroundTint="@null"
+            android:background="@drawable/botones_backgorundnum"/>
+
+        <Button
+            android:id="@+id/boton_menos"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_margin="5dp"
+            android:text="-"
+            android:textColor="@color/colorBordersText"
+            android:textSize="30sp"
+            app:backgroundTint="@null"
+            android:background="@drawable/botones_backgroundsignos"/>
+
+        <Button
+            android:id="@+id/boton_uno"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_margin="5dp"
+            android:text="1"
+            android:textColor="@color/colorBordersText"
+            android:textSize="30sp"
+            app:backgroundTint="@null"
+            android:background="@drawable/botones_backgorundnum"/>
+
+        <Button
+            android:id="@+id/boton_dos"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_margin="5dp"
+            android:text="2"
+            android:textColor="@color/colorBordersText"
+            android:textSize="30sp"
+            app:backgroundTint="@null"
+            android:background="@drawable/botones_backgorundnum"/>
+
+        <Button
+            android:id="@+id/boton_tres"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_margin="5dp"
+            android:text="3"
+            android:textColor="@color/colorBordersText"
+            android:textSize="30sp"
+            app:backgroundTint="@null"
+            android:background="@drawable/botones_backgorundnum"/>
+
+        <Button
+            android:id="@+id/boton_mas"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_margin="5dp"
+            android:text="+"
+            android:textColor="@color/colorBordersText"
+            android:textSize="30sp"
+            app:backgroundTint="@null"
+            android:background="@drawable/botones_backgroundsignos"/>
+
+        <Button
+            android:id="@+id/boton_cero"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_margin="5dp"
+            android:text="0"
+            android:textColor="@color/colorBordersText"
+            android:textSize="30sp"
+            app:backgroundTint="@null"
+            android:background="@drawable/botones_backgorundnum"/>
+
+        <Button
+            android:id="@+id/boton_coma"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_margin="5dp"
+            android:text=","
+            android:textColor="@color/colorBordersText"
+            android:textSize="30sp"
+            app:backgroundTint="@null"
+            android:background="@drawable/botones_backgroundsignos"/>
+
+        <Button
+            android:id="@+id/boton_igual"
+            android:layout_width="188dp"
+            android:layout_height="90dp"
+            android:layout_columnSpan="2"
+            android:layout_margin="5dp"
+            android:text="="
+            android:textColor="@color/colorBordersText"
+            android:textSize="30sp"
+            app:backgroundTint="@null"
+            android:background="@drawable/botones_backgroundsignos"/>
+
+
+    </GridLayout>
+</LinearLayout>
