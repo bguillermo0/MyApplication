@@ -280,7 +280,7 @@
             android:layout_row="0"
             android:text="÷"
             android:textColor="@color/colorBordersText"
-            android:textSize="30sp"
+            android:textSize="25sp"
             app:backgroundTint="@null"
             android:background="@drawable/landscape_backgroundsignos1"
             />
